@@ -5,19 +5,9 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 // ** Reducers
 import AuthSlice from './Slices/auth';
-import dashboardSlice from './Slices/dashboard/dashboardSlice';
-import CumulativeSlice from './Slices/cumulative/cumulativeSlice';
-import SpeedometerSlice from './Slices/speedometer/speedometerSlice';
-import VQEligibilitySlice from './Slices/VQEligibility/VQEligibilitySlice';
-import ShotStatisticsSlice from './Slices/shot-statistics/shotStatisticsSlice';
 
 const rootReducer = combineReducers({
   auth: AuthSlice,
-  dashboard: dashboardSlice,
-  cumulative: CumulativeSlice,
-  speedometer: SpeedometerSlice,
-  vqEligibility: VQEligibilitySlice,
-  shotStatistics: ShotStatisticsSlice,
 });
 
 const persistConfig = {
